@@ -21,8 +21,10 @@
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-project-message": "^9.4",
         "drupal/core-recommended": "^9.4",
+        "drupal/gesso": "^5.0",
         "drupal/paragraphs": "^1.14",
         "drupal/twig_field_value": "^2.0",
+        "drupal/twig_tweak": "^2.9",
         "drush/drush": "^11.0"
     },
     "conflict": {

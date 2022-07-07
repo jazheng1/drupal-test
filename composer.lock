@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0d8ad433557f3ec94c3e4e1b3f9f8312",
+    "content-hash": "9f2e184cba5a9438ceb433043e449491",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1817,6 +1817,111 @@
             }
         },
         {
+            "name": "drupal/gesso",
+            "version": "5.0.9",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/gesso.git",
+                "reference": "5.0.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/gesso-5.0.9.zip",
+                "reference": "5.0.9",
+                "shasum": "d72908d733dcbf7d75e8a337fe34593981817dd8"
+            },
+            "require": {
+                "drupal/components": "*",
+                "drupal/core": "^8.9 || ^9",
+                "drupal/gesso_helper": "*",
+                "drupal/twig_tweak": "*"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "5.0.9",
+                    "datestamp": "1647631707",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "clafferty",
+                    "homepage": "https://www.drupal.org/user/1334864"
+                },
+                {
+                    "name": "dcmouyard",
+                    "homepage": "https://www.drupal.org/user/376907"
+                },
+                {
+                    "name": "kmonahan",
+                    "homepage": "https://www.drupal.org/user/3520348"
+                }
+            ],
+            "description": "Storybook-based starter theme",
+            "homepage": "https://www.drupal.org/project/gesso",
+            "support": {
+                "source": "https://git.drupalcode.org/project/gesso"
+            }
+        },
+        {
+            "name": "drupal/gesso_helper",
+            "version": "5.0.9",
+            "require": {
+                "drupal/components": "^2.1",
+                "drupal/core": "^8.9 || ^9",
+                "drupal/gesso": "^5",
+                "php": ">=7.3"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "5.0.9",
+                    "datestamp": "1647631707",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9.4.0 | ^10.0.0"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Forum One",
+                    "homepage": "https://www.drupal.org/user/1334864",
+                    "email": "author@example.com"
+                },
+                {
+                    "name": "dcmouyard",
+                    "homepage": "https://www.drupal.org/user/376907"
+                },
+                {
+                    "name": "kmonahan",
+                    "homepage": "https://www.drupal.org/user/3520348"
+                }
+            ],
+            "description": "Provides additional functionality for the Gesso theme.",
+            "homepage": "https://www.drupal.org/project/gesso",
+            "support": {
+                "source": "https://git.drupalcode.org/project/gesso"
+            }
+        },
+        {
             "name": "drupal/paragraphs",
             "version": "1.14.0",
             "source": {
@@ -1939,6 +2044,59 @@
             "homepage": "https://www.drupal.org/project/twig_field_value",
             "support": {
                 "source": "https://git.drupalcode.org/project/twig_field_value"
+            }
+        },
+        {
+            "name": "drupal/twig_tweak",
+            "version": "2.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/twig_tweak.git",
+                "reference": "8.x-2.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/twig_tweak-8.x-2.9.zip",
+                "reference": "8.x-2.9",
+                "shasum": "c45ba1a41e323a432d1ff36d0a72344b88595a39"
+            },
+            "require": {
+                "drupal/core": "^8.7 || ^9.0",
+                "twig/twig": "^1.41 || ^2.12"
+            },
+            "suggest": {
+                "symfony/var-dumper": "Better dump() function for debugging Twig variables"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.9",
+                    "datestamp": "1608093728",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Chi",
+                    "homepage": "https://www.drupal.org/user/556138"
+                }
+            ],
+            "description": "A Twig extension with some useful functions and filters for Drupal development.",
+            "homepage": "https://www.drupal.org/project/twig_tweak",
+            "keywords": [
+                "Drupal",
+                "Twig"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/twig_tweak",
+                "issues": "https://www.drupal.org/project/issues/twig_tweak"
             }
         },
         {
